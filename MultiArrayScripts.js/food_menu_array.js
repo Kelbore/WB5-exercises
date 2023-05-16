@@ -19,16 +19,10 @@ let menu = [
     ]
 ];
 
+const mealIndex = 0;
+const mealNames = ["Breakfast", "Lunch", "Dinner"];
+console.log(mealNames[mealIndex], 'Menu');
+menu[mealIndex].forEach((food) => 
+    console.log('-',food.item)
+);
 
-console.log("Breakfast Menu");
-menu.forEach((food) => 
-    console.log('-',food[0].item)
-);
-console.log("Lunch Menu");
-menu.forEach((food) => 
-    console.log('-',food[1].item)
-);
-console.log("Dinner Menu");
-menu.forEach((food) => 
-    console.log('-',food[2].item)
-);
