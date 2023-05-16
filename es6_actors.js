@@ -45,3 +45,8 @@ let academyMembers = [
    actorWhoStartsWithBob.forEach((member) => console.log(`Member ${member.name} starts with Bob`));
 
    //film that starts with A
+   console.log('');
+   console.log('Actors who have been in a film starting with "A"');
+   const actorsInFilmsThatStartWithA = academyMembers.filter((member) =>
+   member.films.find((film) => film.startsWith('A')));
+   actorsInFilmsThatStartWithA.forEach((actor) => console.log('-', actor.name));
