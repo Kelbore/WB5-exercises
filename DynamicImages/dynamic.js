@@ -32,22 +32,22 @@ const addImage = document.getElementById("addImage");
     if(stateImages.options[stateImages.selectedIndex].textContent === 'stairs') {
         img = document.createElement("img");
         img.src = "./images/atlanta.jpg";
-        img.alt = "picture of motorcycle";    
+        img.alt = "picture of stairs";    
     }
     if(stateImages.options[stateImages.selectedIndex].textContent === 'stage') {
         img = document.createElement("img");
         img.src = "./images/chicago.jpg";
-        img.alt = "picture of motorcycle";    
+        img.alt = "picture of stage";    
     }
     if(stateImages.options[stateImages.selectedIndex].textContent === 'flower') {
         img = document.createElement("img");
         img.src = "./images/florida.jpg";
-        img.alt = "picture of motorcycle";    
+        img.alt = "picture of flower";    
     }
     if(stateImages.options[stateImages.selectedIndex].textContent === 'city') {
         img = document.createElement("img");
         img.src = "./images/ohio.jpg";
-        img.alt = "picture of motorcycle";    
+        img.alt = "picture of city";    
     }
   }
 
