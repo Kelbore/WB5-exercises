@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="xyz">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="css/style.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+
+  <p class="attn">Voluptas perspiciatis tempore ut similique excepturi alias.</p>
+
+
+  <div>
+    <p class="attn"><span>Voluptas perspiciatis tempore</span> ut similique excepturi alias.</p>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod cumque corporis dolorum doloremque, quae saepe ipsum fugiat officiis labore eos, distinctio neque veritatis voluptas perspiciatis tempore ut similique excepturi alias.</p>
+    <p><span>Lorem ipsum dolor sit</span>, amet consectetur adipisicing elit. Quod cumque corporis dolorum doloremque, quae saepe ipsum fugiat officiis labore eos, distinctio neque veritatis voluptas perspiciatis tempore ut similique excepturi alias.</p>
+  </div>
+
+  <div class="imageGroup">
+    <img src="https://via.placeholder.com/320x180" alt="Image 1">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+  </div>
+  <div class="imageGroup">
+    <img src="https://via.placeholder.com/320x180" alt="Image 2">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+  </div>
+  <div class="imageGroup">
+    <img src="https://via.placeholder.com/320x180">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+  </div>
+  <div class="imageGroup">
+    <img src="https://via.placeholder.com/320x180">
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure doloribus aut, amet repellat dolor recusandae sapiente, maiores quas officia cum nesciunt illum, neque eligendi dolores obcaecati quidem impedit unde pariatur!</p>
+  </div>
+  
+</body>
+<script>
+    let objSet1 = document.querySelectorAll("p");
+    console.log(objSet1);
+    let objSet2 = document.querySelectorAll(".attn");
+    console.log(objSet2);
+    let objSet3 = document.querySelectorAll("p.attn");
+    console.log(objSet3);
+    let objSet4 = document.querySelectorAll("img[alt]");
+    console.log(objSet4);
+    let objSet5 = document.querySelectorAll("div > p");
+    console.log(objSet5);
+    let objSet6 = document.querySelectorAll("div, span");
+    console.log(objSet6);
+    let imageGroupEl = document.getElementsByClassName("imageGroup");
+    Array.from(imageGroupEl).forEach((imageGroupEl) => {
+      imageGroupEl.style.border = '2px solid red';
+    })
+    const imagesWithoutAlt = document.querySelectorAll('img:not([alt])');
+    console.log(imagesWithoutAlt);
+    Array.from(imagesWithoutAlt).forEach(imgEl => {
+      imgEl.alt = 'graffiti image';
+    })
+</script>
+</html>
